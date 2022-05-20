@@ -1,0 +1,105 @@
+:root{
+    --blue: #8e92e6;
+    --dark-blue: #414471;
+    --white: #ececf4;
+}
+body{
+    width: 100%;
+    background-color: var(--blue);
+    overflow-x: hidden;
+    
+}
+.container{
+    background-color: var(--dark-blue);
+    width: 400px;
+    height: 400px;
+    margin: 50px auto;
+    border-radius: 4px;
+    display: flex;
+    box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.41);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0,0,0,0.41);
+}
+#t-container{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.box{
+    padding: 10px; 
+}
+#corner-lt-box{
+    border-bottom: 10px solid var(--white);
+    border-right: 10px solid var(--white);
+}
+#corner-rt-box{
+    border-bottom: 10px solid var(--white);
+    border-left: 10px solid var(--white);
+}
+#corner-lb-box{
+    border-top: 10px solid var(--white);
+    border-right: 10px solid var(--white);
+}
+#corner-rb-box{
+    border-top: 10px solid var(--white);
+    border-left: 10px solid var(--white);
+}
+#top-box{
+    border-bottom: 10px solid var(--white);
+}
+#bottom-box{
+    border-top: 10px solid var(--white);
+}
+#right-box{
+    border-left: 10px solid var(--white);
+}
+#left-box{
+    border-right: 10px solid var(--white);
+}
+.circle{
+    width: 50%;
+    height: 50%;
+    border: 10px solid var(--white);
+    border-radius: 50%;
+    margin: 10px auto;
+}
+
+.cross {
+    width: 70%;
+    height: 70%;
+    position: relative;
+    transform:rotate(45deg);
+    -ms-transform:rotate(45deg); 
+    -webkit-transform:rotate(45deg);
+    margin: 10px auto;
+}
+ .cross:before, .cross:after {
+   content: "";
+   position: absolute;
+   background: var(--white);
+ }
+ 
+ .cross:before {
+   left: 55%;
+   width: 20%;
+   margin-left: -15%;
+   height: 100%;
+ }
+ 
+ .cross:after {
+   top: 55%;
+   height: 20%;
+   margin-top: -15%;
+   width: 100%;
+ }
+ .winner-div{
+     margin: auto;
+     text-align: center;
+ }
+ #winner-message{
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+ }
